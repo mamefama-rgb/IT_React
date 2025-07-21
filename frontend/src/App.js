@@ -22,6 +22,7 @@ import UserManagement from './pages/UserManagement';
 import NotFound from './pages/NotFound';
 import AdminPanel from './pages/AdminPanel';
 import Chatbot from './pages/Chatbot';
+import FAQ from './pages/FAQ';
 
 import './App.css';
 
@@ -39,6 +40,9 @@ const AppContent = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/admin" element={<AdminPanel />} />
+            <Route path="/faq" element={<FAQ />} />
+            
+            {/* Routes protégées */}
             
             <Route 
               path="/dashboard" 
