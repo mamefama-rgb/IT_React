@@ -109,7 +109,7 @@ const Chatbot = () => {
     // Questions sur le chatbot
     aboutBot: {
       patterns: ['qui es-tu', 'comment tu fonctionnes', 'que peux-tu faire', 'aide'],
-      response: "🤖 **Je suis votre assistant IT intelligent !**\n\n**Je peux vous aider avec :**\n• Problèmes de connexion et mots de passe\n• Dysfonctionnements réseau et WiFi\n• Problèmes d'impression\n• Performance et lenteur PC\n• Erreurs logicielles\n• Questions de sécurité\n• Création de tickets support\n\n**Mes capacités :**\n✓ Diagnostic étape par étape\n✓ Solutions adaptées à votre niveau\n✓ Support multilingue\n✓ Escalade vers techniciens\n\n*Décrivez-moi votre problème, je m'adapte automatiquement à votre expertise !*"
+      response: "🤖 **Je suis votre assistant IT!**\n\n**Je peux vous aider avec :**\n• Problèmes de connexion et mots de passe\n• Dysfonctionnements réseau et WiFi\n• Problèmes d'impression\n• Performance et lenteur PC\n• Erreurs logicielles\n• Questions de sécurité\n• Création de tickets support\n\n**Mes capacités :**\n✓ Diagnostic étape par étape\n✓ Solutions adaptées à votre niveau\n✓ Support multilingue\n✓ Escalade vers techniciens\n\n*Décrivez-moi votre problème, je m'adapte automatiquement à votre expertise !*"
     }
   };
 
@@ -153,7 +153,7 @@ const Chatbot = () => {
     if (isOpen && messages.length === 0) {
       setMessages([{
         id: 1,
-        text: "👋 **Bonjour ! Je suis votre assistant IT intelligent.**\n\nJe peux vous aider avec tous vos problèmes informatiques. Mon IA s'adapte automatiquement à votre niveau d'expertise !\n\n**Pour commencer :** Décrivez-moi votre problème ou choisissez une action rapide ci-dessous.",
+        text: "👋 **Bonjour ! Je suis votre assistant IT .**\n\nJe peux vous aider avec tous vos problèmes informatiques. Mon IA s'adapte automatiquement à votre niveau d'expertise !\n\n**Pour commencer :** Décrivez-moi votre problème ou choisissez une action rapide ci-dessous.",
         sender: 'bot',
         timestamp: new Date(),
         suggestions: ["Mon PC est lent", "Problème de connexion", "L'imprimante ne fonctionne pas"]
@@ -559,8 +559,8 @@ const Chatbot = () => {
                 <div className="online-indicator"></div>
               </div>
               <div>
-                <h3 className="chat-title">Assistant IT Intelligent</h3>
-                <p className="chat-status">En ligne • Répond en temps réel</p>
+                <h3 className="chat-title">Assistant IT</h3>
+                <p className="chat-status">En ligne •</p>
               </div>
             </div>
             <button
@@ -659,7 +659,7 @@ const Chatbot = () => {
           </div>
           <div className="chat-hint">
             <div className="online-indicator hint"></div>
-            <span>Assistant IA • Appuyez sur Entrée pour envoyer</span>
+            <span>Assistant IT • Appuyez sur Entrée pour envoyer</span>
           </div>
         </div>
       )}
